@@ -11,6 +11,8 @@ local function pressed(inp)
     else
       img.Visible = false
       uis.MouseIconEnabled = true
-      uis.MouseBehavior = ENum.MouseBehavior.Default
+      uis.MouseBehavior = Enum.MouseBehavior.Default
+    end
+  end
 end
 uis.InputBegan:Connect(pressed)
